@@ -1,0 +1,81 @@
+body{
+	background-image:url('sourcesmartsintro.png');
+	background-repeat:=no-repeat;
+	background-position:0px 0px;
+	-webkit-transition: background-position .3s ease;
+	-moz-transition: background-position .3s ease;
+    -o-transition: background-position .3s ease;
+	transition: background-position .3s ease;
+	overflow:hidden;
+}
+body:hover{
+	background-position: 0px -500px;
+}
+#bottom{
+	position:absolute;
+	left:0px;
+	top:0px;
+	overflow:hidden;
+	width:100%;
+	height:100%;
+	-webkit-transition: top .3s ease;
+	-moz-transition: top .3s ease;
+    -o-transition: top .3s ease;
+	transition: top .3s ease;
+}
+#bottomimg{
+	position:absolute;
+	top:1000px;
+	left:0px;
+}
+#bottom:hover{
+	top:-200px;
+}
+
+#enter{
+	position:absolute;
+	left:0px;
+	top:300px;
+	width:100%;
+	text-align:center;
+}
+
+#enterbottom{
+	position:absolute;
+	left:0px;
+	top:275px;
+	width:100%;
+	text-align:center;
+}
+#enter img{
+	height:200px;
+	width:250px;
+	-webkit-transition: all 0.75s ease-in-out;
+	-moz-transition: all 0.75s ease-in-out;
+	-o-transition: all 0.75s ease-in-out;
+	-ms-transition: all 0.75s ease-in-out;	
+	transition: all 0.75s ease-in-out;
+}
+
+#enter img:hover{
+	opacity: 1;
+ 
+	/* Firefox */
+	-moz-transform: scale(1.5) rotate(20deg) translate(20px);
+	/* WebKit */
+	-webkit-transform: scale(1.5) rotate(20deg) translate(20px);
+	/* Opera */
+	-o-transform: scale(1.5) rotate(20deg) translate(20px);
+	/* Standard */
+	transform: scale(1.5) rotate(20deg) translate(20px);
+
+	z-index: 1000;
+
+}
+
+#enter img.top:hover{
+	opacity:0;
+}
+#enter img, #enterbottom img{
+	border-style: none !important;
+}
